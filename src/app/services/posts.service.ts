@@ -13,7 +13,7 @@ export class PostsService {
 
   // Get all posts from the API
   getAllPosts() {
-    return this.http.get(`${this.baseUrl}/api/posts`);
+    return this.http.get(`${this.baseUrl}/posts`);
   }
 
 }
