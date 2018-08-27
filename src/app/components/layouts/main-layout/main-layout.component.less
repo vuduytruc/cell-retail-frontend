@@ -1,0 +1,117 @@
+@import (less) "../../../../global.less";
+
+.header {
+  display: block;
+  background: @yellow;
+  text-align: center;
+  .wrap-main {
+    .align-items(center);
+    max-width: 1200px;
+    background: @black;
+    color: #333;
+    height: 55px;
+    .logo, .search-box, .header-nav {
+      display: inline-block;
+    }
+    .icon {
+      display: inline-block;
+      width: 16px;
+      height: 25px;
+      background-image: url('../../../../assets/img/icondesktop@1x.png');;
+      &.icon-logo {
+        background-position: 0 0;
+        width: 155px;
+        // width: 28px;
+        height: 27px;
+        margin: 0 13px 0 10px;
+      }
+      &.icon-search {
+        background-position: -160px 0;
+        width: 28px;
+        height: 20px;
+      }
+      &.icon-phone {
+        background-position: -190px 0;
+        width: 16px;
+      }
+      &.icon-tablet {
+        background-position: -209px 0;
+        width: 33px;
+      }
+      &.icon-laptop {
+        background-position: -245px 0;
+        width: 39px;
+      }
+      &.icon-accessory {
+        background-position: -288px 0;
+        width: 22px;
+      }
+      &.icon-returned {
+        background-position: -315px 0;
+        width: 34px;
+      }
+      &.icon-promo {
+        background-position: -475px 0;
+        width: 22px;
+      }
+      &.icon-news {
+        background-position: -375px 0;
+        width: 29px;
+      }
+      &.icon-ask {
+        background-position: -410px 0;
+        width: 25px;
+      }
+    }
+    .search-box {
+      .align-items(center);
+      width: 200px;
+      height: 35px;
+      background: @white;
+      border-radius: 4px;
+      overflow: hidden;
+      input {
+        flex: 1;
+        border: 0;
+        text-indent: 10px;
+        font-size: 13px;
+        background: @white;
+        margin-left: 8px;
+      }
+      .btn-search {
+        .align-items(center);
+        background: @white;
+        border: 0;
+        flex: 0 0 28px;
+        height: 27px;
+      }
+    }
+    .header-nav {
+      .align-items(center);
+      height: 100%;
+      background: @yellow;
+      margin-left: 10px;
+      a {
+        display: inline-block;
+        font-size: 11px;
+        padding: 0 10px;
+        color: @black;
+        text-align: center;
+        text-transform: uppercase;
+        height: 100%;
+        &:hover {
+          background: @light-gray;
+        }
+        .icon {
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background: @light-gray;
+  color: #999;
+  text-align: center;
+}

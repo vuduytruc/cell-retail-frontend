@@ -1,20 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
-import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 
-import { ROUTES } from './routes';
+import { AppComponent } from './app.component';
+import { ROUTES } from './router';
 
-import { PostsService } from './services/posts.service';
+// Services
 
-import { PostsComponent } from './components/posts/posts.component';
+import { MainLayoutComponent } from './components/layouts/main-layout/main-layout.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent
+    MainLayoutComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +23,7 @@ import { PostsComponent } from './components/posts/posts.component';
     RouterModule.forRoot(ROUTES)
   ],
   providers: [
-    PostsService
+    // Services
   ],
   bootstrap: [AppComponent]
 })
