@@ -6,3 +6,7 @@
 
 * Production page: _[Frontend Production Page Link](https://cell-retail-frontend.herokuapp.com)_
 
+# Super Repository: _[cell-retail-app](https://github.com/vuduytruc/cell-retail-app)_
+
+* Author: _**TRUC Vu**_
+
