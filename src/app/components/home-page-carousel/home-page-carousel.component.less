@@ -1,0 +1,44 @@
+#home-page-carousel.carousel {
+  .carousel-control {
+    &.left, &.right {
+      height: 50px;
+      width: 50px;
+      right: 10px;
+      top: 50%;
+      margin-top: -25px;
+      border-radius: 5px;
+      background: rgba(0,0,0,0);
+      .glyphicon {
+        display: none;
+        height: 30px;
+        width: 30px;
+        top: 50%;
+        margin-top: -15px;
+        left: 50%;
+        margin-left: -15px;
+      }
+      &:hover {
+        background: rgba(0,0,0,.3);
+        .glyphicon {
+          display: block;
+        }
+      }
+    }
+    &.left {
+      margin-left: 10px;
+    }
+    &.right {
+      margin-right: 10px;
+    }
+  }
+  &:hover {
+    .carousel-control {
+      &.left, &.right {
+        background: rgba(0,0,0,.3);
+        .glyphicon {
+          display: block;
+        }
+      }
+    }
+  }
+}

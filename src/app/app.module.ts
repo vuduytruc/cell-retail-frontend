@@ -10,12 +10,16 @@ import { ROUTES } from './router';
 
 import { MainLayoutComponent } from './components/layouts/main-layout/main-layout.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { HomePageCarouselComponent } from './components/home-page-carousel/home-page-carousel.component';
+import { HomePageNewsComponent } from './components/home-page-news/home-page-news.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainLayoutComponent,
-    HomePageComponent
+    HomePageComponent,
+    HomePageCarouselComponent,
+    HomePageNewsComponent
   ],
   imports: [
     BrowserModule,

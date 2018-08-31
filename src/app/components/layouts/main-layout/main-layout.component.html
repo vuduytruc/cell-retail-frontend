@@ -1,29 +1,31 @@
-<header class="header">
-  <div class="wrap-main">
-    <a href="/" class="logo">
-      <i class="icon icon-logo"></i>
-    </a>
-    <form class="search-box" action="/search">
-      <input type="text" name="keyword" placeholder="Search for ..." autocomplete="off" />
-      <button class="btn-search" type="submit"><i class="icon icon-search"></i></button>
-    </form>
-    <nav class="header-nav">
-      <a class="phone" href="/phone"><i class="icon icon-phone"></i><br/>Cell Phone</a>
-      <a class="tablet" href="/tablet"><i class="icon icon-tablet"></i><br/>Tablet</a>
-      <a class="laptop" href="/laptop"><i class="icon icon-laptop"></i><br/>Laptop</a>
-      <a class="accessory" href="/accessory"><i class="icon icon-accessory"></i><br/>Accessory</a>
-      <a class="returned" href="/returned"><i class="icon icon-returned"></i><br/>Returned</a>
-      <a class="promo" href="/promo"><i class="icon icon-promo"></i><br/>Promotion</a>
-      <a class="news" href="/news"><i class="icon icon-news"></i><br/>News</a>
-      <a class="ask" href="/ask"><i class="icon icon-ask"></i><br/>Questions</a>
-    </nav>
-  </div>
-</header>
-
-<main class="main">
-  <router-outlet></router-outlet>
-</main>
-
-<footer class="footer">
-  © 2018. Cell Retail App
-</footer>
+<div class="main-layout">
+  <header class="header">
+    <div class="wrap-main">
+      <a href="/" class="logo">
+        <i class="icon icon-logo"></i>
+      </a>
+      <form class="search-box" action="/search">
+        <input type="text" name="keyword" placeholder="Search for ..." autocomplete="off" />
+        <button class="btn-search" type="submit"><i class="icon icon-search"></i></button>
+      </form>
+      <nav class="header-nav">
+        <a class="phone" href="/phone"><i class="icon icon-phone"></i><br/>Cell Phone</a>
+        <a class="tablet" href="/tablet"><i class="icon icon-tablet"></i><br/>Tablet</a>
+        <a class="laptop" href="/laptop"><i class="icon icon-laptop"></i><br/>Laptop</a>
+        <a class="accessory" href="/accessory"><i class="icon icon-accessory"></i><br/>Accessory</a>
+        <a class="returned" href="/returned"><i class="icon icon-returned"></i><br/>Returned</a>
+        <a class="promo" href="/promo"><i class="icon icon-promo"></i><br/>Promotion</a>
+        <a class="news" href="/news"><i class="icon icon-news"></i><br/>News</a>
+        <a class="ask" href="/ask"><i class="icon icon-ask"></i><br/>Questions</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="main">
+    <router-outlet></router-outlet>
+  </main>
+  
+  <footer class="footer">
+    © 2018. Cell Retail App
+  </footer>
+</div>
